@@ -50,7 +50,7 @@ const Skills = () => {
           ))}
         </div>
 
-        <div className="w-96 h-[5px] bg-[#004aad] mx-auto rounded-2xl" style={{background: `${color}`}}></div>
+        <div className="w-48 md:w-96 h-[5px] bg-[#004aad] mx-auto rounded-2xl" style={{background: `${color}`}}></div>
         <p className="text-xl text-center">
           Bachelor in Technology in Computer Science Of Information Technology
           Engineering :{" "}
