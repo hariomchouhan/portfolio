@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import "./App.css";
 import Header from "./Components/Header";
-import Footer from './Components/Footer'
+import Footer from "./Components/Footer";
 import { themeContext } from "./ContextAPI/ThemeContext";
 import yellow from "./assets/yellow.png";
 import red from "./assets/red.png";
@@ -24,8 +24,8 @@ function App() {
   return (
     <>
       <Header />
-      <div className="w-11/12 mx-auto max-w-[1280px] relative flex">
-        <div>
+      <div className="w-[90%] md:w-11/12 mx-auto max-w-[1280px] relative flex">
+        <div className="mx-auto w-full">
           <Routes>
             <Route path="/" element={<Home data={filteredData} />} />
             <Route
