@@ -20,7 +20,7 @@ import ProjectPage from "./Pages/ProjectPage";
 
 function App() {
   const { setColor, setBoxShadow } = useContext(themeContext);
-  const filteredData = projectData.slice(0, 3);
+  const filteredData = projectData.slice(0, 6);
   return (
     <>
       <Header />
