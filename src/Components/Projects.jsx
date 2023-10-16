@@ -28,7 +28,8 @@ const Projects = ({ data }) => {
           >
             <img
               src={data.img}
-              alt=""
+              alt={data.title}
+              loading="lazy"
               className="w-80 rounded-2xl shadow-2xl"
               draggable="false"
             />
