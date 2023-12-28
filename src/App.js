@@ -17,6 +17,7 @@ import { projectData } from "./Data/ProjectData";
 import Home from "./Pages/Home";
 import { Route, Routes } from "react-router-dom";
 import ProjectPage from "./Pages/ProjectPage";
+import ScrollButton from "./Components/ScrollButton";
 
 function App() {
   const { setColor, setBoxShadow } = useContext(themeContext);
@@ -34,7 +35,7 @@ function App() {
             />
           </Routes>
         </div>
-        <div className="fixed mt-[1rem] right-[0.5rem] flex flex-col gap-3">
+        <div className="fixed mt-[2rem] right-[0.5rem] flex flex-col gap-3">
           <img
             src={yellow}
             alt=""
@@ -118,6 +119,7 @@ function App() {
           />
         </div>
       </div>
+      <ScrollButton />
       <Footer />
     </>
   );

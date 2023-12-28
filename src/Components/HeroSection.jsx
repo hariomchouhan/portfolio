@@ -1,12 +1,15 @@
 import React, { useContext, useEffect, useRef } from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import myPic from "../assets/Home.png";
+import myPic from "../assets/Home.webp";
 import { themeContext } from "../ContextAPI/ThemeContext";
 import { init } from "ityped";
+import { FaCode } from "react-icons/fa6";
+import ReactWhatsapp from "react-whatsapp";
+import { BiLogoWhatsappSquare } from "react-icons/bi";
 
 const HeroSection = () => {
-  const { color } = useContext(themeContext);
+  const { color, boxShadow } = useContext(themeContext);
   const textRef = useRef();
 
   useEffect(() => {
@@ -15,7 +18,21 @@ const HeroSection = () => {
       backDelay: 1500,
       loop: true,
       typeSpeed: 150,
-      strings: ["React", "JavaScript", "TailwindCSS", "HTML 5", "CSS 3", "Node", "Express", "MongoDB", "Git", "GitHub", "Bootstrap", "Figma"],
+      strings: [
+        "React",
+        "JavaScript",
+        "TailwindCSS",
+        "HTML 5",
+        "CSS 3",
+        "Node",
+        "Express",
+        "MongoDB",
+        "Git",
+        "GitHub",
+        "Bootstrap",
+        "Figma",
+        "VS Code",
+      ],
     });
   }, []);
 
@@ -35,24 +52,44 @@ const HeroSection = () => {
             Frontend Developer with High level of Experience in Web Designing
             and Development, producing the Quality work.
           </span>
-          <span className="w-[90%] text-3xl font-bold text-[#242d49]">I have learn <span ref={textRef} style={{color: `${color}`}}></span></span>
+          <span className="w-[90%] text-3xl font-bold text-[#242d49]">
+            I have learn{" "}
+            <span ref={textRef} style={{ color: `${color}` }}></span>
+          </span>
+
+          <ReactWhatsapp
+            number="+91 9770994821"
+            message=""
+            className="w-[10rem] mt-8 cursor-pointer rounded-[34px] text-white text-[16px] py-[10px] px-[26px] bg-blue-700 shadow-xl shadow-blue-700 font-semibold flex justify-center items-center gap-3 group"
+            style={{ background: `${color}`, boxShadow: `${boxShadow}` }}
+          >
+            <button>Hire Me!</button>
+            <FaCode fontSize={22} className="animate-bounce" />
+          </ReactWhatsapp>
         </div>
 
         <div className="mt-[2rem] p-[1.89rem] flex gap-[4rem]">
           <Link
-            className="transform scale-[4] text-[#004aad]"
+            className="transform scale-[4] text-[#004aad] transition-all divide-fuchsia-200 hover:scale-[5]"
             style={{ color: `${color}` }}
             to="https://github.com/hariomchouhan"
           >
             <AiFillGithub />
           </Link>
           <Link
-            className="transform scale-[4] text-[#004aad]"
+            className="transform scale-[4] text-[#004aad] transition-all divide-fuchsia-200 hover:scale-[5]"
             style={{ color: `${color}` }}
             to="https://www.linkedin.com/in/hariom-chouhan-ab6b7620a"
           >
             <AiFillLinkedin />
           </Link>
+          <ReactWhatsapp
+        number="+91 9770994821"
+        message=""
+        className="transform scale-[4] text-[#004aad] transition-all divide-fuchsia-200 hover:scale-[5]"
+        style={{ color: `${color}` }}>
+           <BiLogoWhatsappSquare  />
+        </ReactWhatsapp>
         </div>
       </div>
 
@@ -62,6 +99,7 @@ const HeroSection = () => {
         alt="Hariom Chouhan"
         className="w-[25rem]"
         draggable="false"
+        loading="lazy"
       />
     </div>
   );
