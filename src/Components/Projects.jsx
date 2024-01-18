@@ -7,6 +7,15 @@ const Projects = ({ data }) => {
   const location = useLocation();
   const fullUrl = location.pathname;
   console.log(fullUrl);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+      /* you can also use 'auto' behaviour
+             in place of 'smooth' */
+    });
+  };
   return (
     <div className="flex w-full mb-20 gap-8 flex-col">
       <h2 className="text-4xl md:text-5xl text-center font-bold">
@@ -46,6 +55,7 @@ const Projects = ({ data }) => {
           to="/projects"
           className="text-2xl font-semibold not-sr-onlyunderline text-center text-[#004aad] cursor-pointer hover:underline flex justify-center items-center gap-3"
           style={{ color: `${color}` }}
+          onClick={scrollToTop}
         >
           See All Projects
           <BsFillArrowRightCircleFill className="flex justify-center items-center" />

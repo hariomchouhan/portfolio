@@ -16,6 +16,9 @@ const Skills = () => {
     "Bootstrap",
     "Git",
     "Figma",
+    "Thunderclient",
+    "Postman",
+    "VS Code"
   ];
 
   const { color, boxShadow } = useContext(themeContext);

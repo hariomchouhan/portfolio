@@ -2,6 +2,8 @@ import React, { useContext } from "react";
 import { AiOutlineLinkedin, AiFillGithub } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { themeContext } from "../ContextAPI/ThemeContext";
+import { RiTwitterXFill } from "react-icons/ri";
+import { FaStackOverflow } from "react-icons/fa";
 
 const Footer = () => {
   const { color } = useContext(themeContext);
@@ -12,7 +14,7 @@ const Footer = () => {
         style={{ background: `${color}` }}
       ></div>
       <div className="flex flex-col gap-6 md:gap-0 md:flex-row justify-around items-center w-full my-8">
-        <p className="text-lg">@ 2023, All Right Reserved</p>
+        <p className="text-lg">@ 2024, All Right Reserved</p>
         <p className="text-lg flex justify-center items-center">
           Designed by &nbsp;
           <p className="flex justify-center items-center">
@@ -36,6 +38,18 @@ const Footer = () => {
             style={{ color: `${color}` }}
           >
             <AiFillGithub />
+          </Link>
+          <Link
+            style={{ color: `${color}` }}
+            to="https://twitter.com/Hari_om_Chouhan"
+          >
+            <RiTwitterXFill />
+          </Link>
+          <Link
+            style={{ color: `${color}` }}
+            to="https://stackoverflow.com/users/19839122/hariom-chouhan"
+          >
+            <FaStackOverflow />
           </Link>
         </div>
       </div>

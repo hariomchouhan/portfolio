@@ -1,5 +1,7 @@
 import React, { useContext, useEffect, useRef } from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { RiTwitterXFill } from "react-icons/ri";
+import { FaStackOverflow } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import myPic from "../assets/Home.webp";
 import { themeContext } from "../ContextAPI/ThemeContext";
@@ -68,25 +70,39 @@ const HeroSection = () => {
           </ReactWhatsapp>
         </div>
 
-        <div className="mt-[2rem] p-[1.89rem] flex gap-[4rem]">
+        <div className="mt-[2rem] p-[1.89rem] flex gap-[2.8rem] md:gap-[4rem] flex-wrap">
           <Link
-            className="transform scale-[4] text-[#004aad] transition-all divide-fuchsia-200 hover:scale-[5]"
+            className="transform scale-[3] md:scale-[4] text-[#004aad] transition-all divide-fuchsia-200 md:hover:scale-[5]"
             style={{ color: `${color}` }}
             to="https://github.com/hariomchouhan"
           >
             <AiFillGithub />
           </Link>
           <Link
-            className="transform scale-[4] text-[#004aad] transition-all divide-fuchsia-200 hover:scale-[5]"
+            className="transform scale-[3] md:scale-[4] text-[#004aad] transition-all divide-fuchsia-200 md:hover:scale-[5]"
             style={{ color: `${color}` }}
             to="https://www.linkedin.com/in/hariom-chouhan-ab6b7620a"
           >
             <AiFillLinkedin />
           </Link>
+          <Link
+            className="transform scale-[3] md:scale-[4] text-[#004aad] transition-all divide-fuchsia-200 md:hover:scale-[5]"
+            style={{ color: `${color}` }}
+            to="https://twitter.com/Hari_om_Chouhan"
+          >
+            <RiTwitterXFill />
+          </Link>
+          <Link
+            className="transform scale-[3] md:scale-[4] text-[#004aad] transition-all divide-fuchsia-200 md:hover:scale-[5]"
+            style={{ color: `${color}` }}
+            to="https://stackoverflow.com/users/19839122/hariom-chouhan"
+          >
+            <FaStackOverflow />
+          </Link>
           <ReactWhatsapp
         number="+91 9770994821"
         message=""
-        className="transform scale-[4] text-[#004aad] transition-all divide-fuchsia-200 hover:scale-[5]"
+        className="transform scale-[3] md:scale-[4] text-[#004aad] transition-all divide-fuchsia-200 md:hover:scale-[5]"
         style={{ color: `${color}` }}>
            <BiLogoWhatsappSquare  />
         </ReactWhatsapp>
