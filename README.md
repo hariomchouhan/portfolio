@@ -1,31 +1,45 @@
-# React & Tailwind CSS Starter Pack
+# Hariom Chouhan's Portfolio
 
-This is a starter pack for creating React projects with Tailwind CSS configured. It uses React version **18.2** and Tailwind CSS version **3.2**.
+## Viewing the Portfolio Online
+Link: (https://hariomchouhan.netlify.app/)
 
-## Usage
 
-This starter pack includes a basic setup for using **Tailwind CSS with React**. To start building your own components and styles, follow these steps:
+
+## Getting Started
 
 1. Clone the repository to your local machine.
     ```sh
-    git clone https://github.com/thepranaygupta/react-tailwind-css-starter-pack.git
+    git clone https://github.com/hariomchouhan/portfolio.git
     ```
 
-1. Install the required packages.
+2. Install the required packages.
     ```sh
-    cd react-tailwind-css-starter-pack
+    cd portfolio
     npm install
+    # or
+    yarn install
+    # or
+    bun install
     ```
 
-1. Start the development server.
+3. Start the development server.
     ```sh
     npm start
+    # or
+    yarn start
+    # or
+    bun start
     ```
-1. Open the project in your browser at [`http://localhost:3000`](http://localhost:3000) to view your project.
-1. Create your React components and add your styles using Tailwind classes. You can also create new CSS files and import them into your components.
+4. Open the project in your browser at [`http://localhost:3000`](http://localhost:3000) to view Hariom Portfolio project.
 
-The project is set up to use `postcss-cli` to process your CSS files. You can add your own `tailwind.config.js` file to customize your Tailwind setup.
+# View Few Section Example ScreenShorts
 
-## Contributing
+## Intro
+![image](https://github.com/hariomchouhan/portfolio/assets/75517242/794a8589-de12-493d-a536-2cccacd6f853)
 
-Contributions are welcome! If you have any suggestions or find any issues, please feel free to open an issue or a pull request.
+## Projects
+![image](https://github.com/hariomchouhan/portfolio/assets/75517242/a9214226-e8ff-4db6-9632-62cf97c922f0)
+
+## Let's Contact Me
+![image](https://github.com/hariomchouhan/portfolio/assets/75517242/bda93b74-98e9-40c4-8d36-e2b62dd663a4)
+
