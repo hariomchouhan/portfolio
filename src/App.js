@@ -21,7 +21,7 @@ import ScrollButton from "./Components/ScrollButton";
 
 function App() {
   const { setColor, setBoxShadow } = useContext(themeContext);
-  const filteredData = projectData.slice(0, 6);
+  const filteredData = projectData?.slice(0, 6);
   return (
     <>
       <Header />

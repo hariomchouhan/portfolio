@@ -29,7 +29,7 @@ const Projects = ({ data }) => {
         style={{ background: `${color}` }}
       ></div>
       <div className="flex justify-around items-center gap-y-12 gap-x-16 flex-wrap h-fit">
-        {data.map((data, index) => (
+        {data?.map((data, index) => (
           <Link
             key={index}
             to={data.link}
