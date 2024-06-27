@@ -1,7 +1,6 @@
 import React, { useContext, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-hot-toast";
-import apiKey from "../Data/key";
 import { themeContext } from "../ContextAPI/ThemeContext";
 
 const ContactForm = () => {
@@ -15,15 +14,19 @@ const ContactForm = () => {
     user_phone: "",
     message: "",
   });
+
   const sendEmail = (event) => {
     event.preventDefault();
 
     emailjs
       .sendForm(
-        apiKey.SERVICE_ID,
-        apiKey.TEMPLATE_ID,
+        // apiKey.SERVICE_ID,
+        // apiKey.TEMPLATE_ID,
+        // apiKey.PUBLIC_KEY
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
         form.current,
-        apiKey.PUBLIC_KEY
+        process.env.REACT_APP_PUBLIC_KEY,
       )
       .then(
         (result) => {

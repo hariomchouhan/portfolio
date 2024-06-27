@@ -6,6 +6,7 @@ import toast from "react-hot-toast";
 const Skills = () => {
   const skillsData = [
     "React",
+    "React PWA",
     "JavaScript",
     "HTML 5",
     "CSS 3",

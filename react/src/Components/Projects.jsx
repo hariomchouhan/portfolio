@@ -33,6 +33,7 @@ const Projects = ({ data }) => {
           <Link
             key={index}
             to={data.link}
+            target="_blank"
             className="decoration-0	transition-all duration-200 hover:scale-110"
           >
             <img

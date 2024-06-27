@@ -22,6 +22,7 @@ const HeroSection = () => {
       typeSpeed: 150,
       strings: [
         "React",
+        "React PWA",
         "JavaScript",
         "TailwindCSS",
         "HTML 5",
