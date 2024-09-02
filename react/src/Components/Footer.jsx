@@ -13,7 +13,7 @@ const Footer = () => {
         className="w-[90%] h-[5px] bg-[#004aad] mx-auto rounded-2xl"
         style={{ background: `${color}` }}
       ></div>
-      <div className="flex flex-col gap-6 md:gap-0 md:flex-row justify-around items-center w-full my-8">
+      <div className="flex flex-col gap-6 md:gap-0 md:flex-row justify-around items-center w-full py-8">
         <p className="text-lg">@ 2024, All Right Reserved</p>
         <p className="text-lg flex justify-center items-center">
           Designed by &nbsp;

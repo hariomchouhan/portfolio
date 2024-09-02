@@ -1,12 +1,12 @@
 import React, { useContext } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { themeContext } from "../ContextAPI/ThemeContext";
-import {BsFillArrowRightCircleFill } from 'react-icons/bs'
+import { BsFillArrowRightCircleFill } from "react-icons/bs";
 const Projects = ({ data }) => {
   const { color } = useContext(themeContext);
   const location = useLocation();
   const fullUrl = location.pathname;
-  console.log(fullUrl);
+  // console.log(fullUrl);
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -51,17 +51,19 @@ const Projects = ({ data }) => {
             </p>
           </Link>
         ))}
-        {
-        fullUrl === "/projects" ? "" : <Link
-          to="/projects"
-          className="text-2xl font-semibold not-sr-onlyunderline text-center text-[#004aad] cursor-pointer hover:underline flex justify-center items-center gap-3"
-          style={{ color: `${color}` }}
-          onClick={scrollToTop}
-        >
-          See All Projects
-          <BsFillArrowRightCircleFill className="flex justify-center items-center" />
-        </Link>
-      }
+        {fullUrl === "/projects" ? (
+          ""
+        ) : (
+          <Link
+            to="/projects"
+            className="text-2xl font-semibold not-sr-onlyunderline text-center text-[#004aad] cursor-pointer hover:underline flex justify-center items-center gap-3"
+            style={{ color: `${color}` }}
+            onClick={scrollToTop}
+          >
+            See All Projects
+            <BsFillArrowRightCircleFill className="flex justify-center items-center" />
+          </Link>
+        )}
       </div>
     </div>
   );

@@ -44,7 +44,7 @@ const HeroSection = () => {
       {/* left side */}
       <div className="flex relative flex-1 flex-col">
         <div className="flex flex-col gap-6">
-          <span className="text-[#242d49] font-bold text-5xl">Hy! I Am</span>
+          <span className="text-[#242d49] font-bold text-5xl">Hey! I Am</span>
           <span
             className="text-[#004aad] font-bold text-5xl"
             style={{ color: `${color}` }}
@@ -114,7 +114,8 @@ const HeroSection = () => {
       <img
         src={myPic}
         alt="Hariom Chouhan"
-        className="w-[25rem]"
+        className="rounded-full w-[25rem] border-[6px] shadow-2xl border-[#004aad]"
+        style={{ border: `6px solid ${color}` }}
         draggable="false"
         loading="lazy"
       />

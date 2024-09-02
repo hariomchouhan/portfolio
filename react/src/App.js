@@ -23,9 +23,9 @@ function App() {
   const { setColor, setBoxShadow } = useContext(themeContext);
   const filteredData = projectData?.slice(0, 6);
   return (
-    <>
+    <div className={`bg-slate-200`}>
       <Header />
-      <div className="w-[90%] md:w-11/12 mx-auto max-w-[1280px] relative flex">
+      <div className="pt-28 w-[90%] md:w-11/12 mx-auto max-w-[1280px] relative flex">
         <div className="mx-auto w-full">
           <Routes>
             <Route path="/" element={<Home data={filteredData} />} />
@@ -121,7 +121,7 @@ function App() {
       </div>
       <ScrollButton />
       <Footer />
-    </>
+    </div>
   );
 }
 

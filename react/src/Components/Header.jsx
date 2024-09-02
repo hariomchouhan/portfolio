@@ -3,15 +3,25 @@ import { themeContext } from "../ContextAPI/ThemeContext";
 import { Link } from "react-router-dom";
 
 const Header = () => {
-  const {color} = useContext(themeContext);
+  const { color } = useContext(themeContext);
   return (
-    <div className="w-[100%] gap-3 h-[80px] flex-row justify-center mx-auto flex items-center bg-[#004aad]" style={{background: `${color}`}}>
-      <Link to='/' className="text-white text-5xl font-bold text-center mx-auto cursor-pointer">
-      Hari ॐ
+    <div
+      className={`fixed z-10 w-[100%] gap-3 h-[80px] justify-around flex items-center shadow-md bg-slate-300`}
+    >
+      <Link
+        to="/"
+        className="text-white text-5xl font-bold text-center cursor-pointer"
+        style={{ color: `${color}` }}
+      >
+        Hari ॐ
       </Link>
-      <Link to='/projects' className="text-white text-2xl font-bold text-center mx-auto cursor-pointer">
-      Projects
-      </Link>
+        <Link
+          to="/projects"
+          className="text-white text-2xl pt-1 pb-2 px-2 rounded-md font-bold text-center cursor-pointer hover:shadow-xl"
+          style={{ background: `${color}` }}
+        >
+          Projects
+        </Link>
     </div>
   );
 };

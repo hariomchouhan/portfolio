@@ -65,7 +65,7 @@ const ContactForm = () => {
         placeholder="Full Name"
         required
         name="user_name"
-        className="border-[3px] border-blue-400 rounded-lg py-[0.7rem] px-4 w-[20rem] text-lg outline-none max-w-[25rem]"
+        className="border-[3px] border-blue-400 rounded-lg py-[0.7rem] px-4 w-[20rem] text-lg outline-none max-w-[25rem] bg-slate-200"
         style={{border: `3px solid ${color}`}}
         onChange={changeHandler}
         value={data.user_name}
@@ -75,7 +75,7 @@ const ContactForm = () => {
         placeholder="Your Email"
         required
         name="user_email"
-        className="border-[3px] border-blue-400 rounded-lg py-[0.7rem] px-4 w-[20rem] text-lg outline-none max-w-[25rem]"
+        className="border-[3px] border-blue-400 rounded-lg py-[0.7rem] px-4 w-[20rem] text-lg outline-none max-w-[25rem]  bg-slate-200"
         style={{border: `3px solid ${color}`}}
         onChange={changeHandler}
         value={data.user_email}
@@ -84,7 +84,7 @@ const ContactForm = () => {
         type="text"
         placeholder="Phone Number"
         name="user_phone"
-        className="border-[3px] border-blue-400 rounded-lg py-[0.7rem] px-4 w-[20rem] text-lg outline-none max-w-[25rem]"
+        className="border-[3px] border-blue-400 rounded-lg py-[0.7rem] px-4 w-[20rem] text-lg outline-none max-w-[25rem]  bg-slate-200"
         style={{border: `3px solid ${color}`}}
         onChange={changeHandler}
         value={data.user_phone}
@@ -94,11 +94,12 @@ const ContactForm = () => {
         rows="7"
         placeholder="Message"
         required
-        className="border-[3px] border-blue-400 rounded-lg py-[0.7rem] px-4 w-[20rem] text-lg outline-none max-w-[25rem]"
+        className="border-[3px] border-blue-400 rounded-lg py-[0.7rem] px-4 w-[20rem] text-lg outline-none max-w-[25rem]  bg-slate-200"
         style={{border: `3px solid ${color}`}}
         onChange={changeHandler}
         value={data.message}
       />
+
       <button className="mt-8 cursor-pointer rounded-[34px] text-white text-[16px] py-[11px] px-[26px] bg-blue-700 shadow-xl shadow-blue-700 font-semibold"
       style={{background: `${color}`, boxShadow: `${boxShadow}`}}>
         Submit

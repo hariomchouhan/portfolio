@@ -18,7 +18,7 @@ const Contact = () => {
       </p>
       <div className="flex flex-col gap-16 md:gap-0 md:flex-row justify-between w-full">
         <div className="w-full px-4 flex flex-col justify-center items-center gap-4">
-          <div className="bg-[#e1e8ef] w-[19em] rounded-2xl self-center flex">
+          <div className="bg-slate-300 w-[19em] rounded-2xl self-center flex">
             <div className="my-[0.7rem] ml-[0.7rem] p-4 rounded-2xl text-white text-xl self-center bg-[#004aad]" style={{background: `${color}`}}>
               <BiPhoneCall />
             </div>
@@ -27,7 +27,7 @@ const Contact = () => {
               <p>+91 97709 94821</p>
             </div>
           </div>
-          <div className="bg-[#e1e8ef] w-[19rem] rounded-2xl self-center flex">
+          <div className="bg-slate-300 w-[19rem] rounded-2xl self-center flex">
             <div className="my-[0.7rem] ml-[0.7rem] p-4 rounded-2xl text-white text-xl self-center bg-[#004aad]" style={{background: `${color}`}}>
               <AiOutlineMail />
             </div>
@@ -36,7 +36,7 @@ const Contact = () => {
               <p>hariomchouhan430@gmail.com</p>
             </div>
           </div>
-          <div className="bg-[#e1e8ef] w-[19rem] rounded-2xl self-center flex">
+          <div className="bg-slate-300 w-[19rem] rounded-2xl self-center flex">
             <div className="my-[0.7rem] ml-[0.7rem] p-4 rounded-2xl text-white text-xl self-center bg-[#004aad]" style={{background: `${color}`}}>
               <CiLocationOn />
             </div>
