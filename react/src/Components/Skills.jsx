@@ -54,7 +54,7 @@ const Skills = () => {
         <div className="flex justify-center items-center gap-[20px] flex-wrap">
           {skillsData.map((data, index) => (
             <span
-              className="py-[8px] px-[12px] rounded-[8px] bg-[#e1e8ef] text-xl md:hover:scale-110 transition-all duration-400"
+              className="py-[8px] px-[12px] rounded-[8px] bg-slate-300 text-xl md:hover:scale-110 transition-all duration-400"
               key={index}
             >
               {data}
